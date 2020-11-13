@@ -67,28 +67,16 @@ function rightMov() {
   snake.movLeft = false;
   snake.movUp = false;
   snake.movDown = false;
-  snake.sizeHeight = 20;
-  snake.sizeWidth = 20;
-  cola.PositionY == snake.PositionY
-    ? (cola.PositionY = snake.PositionY)
-    : false;
-  cola.PositionY == snake.PositionY
-    ? (cola.PositionX = snake.PositionX)
-    : false;
+
+
 }
 function leftMov() {
   snake.movLeft = true;
   snake.movRight = false;
   snake.movUp = false;
   snake.movDown = false;
-  snake.sizeHeight = 20;
-  snake.sizeWidth = 20;
-  cola.PositionY == snake.PositionY
-    ? (cola.PositionY = snake.PositionY)
-    : false;
-  cola.PositionY == snake.PositionY
-    ? (cola.PositionX = snake.PositionX)
-    : false;
+ 
+  
 }
 
 function UpMov() {
@@ -96,28 +84,16 @@ function UpMov() {
   snake.movRight = false;
   snake.movUp = true;
   snake.movDown = false;
-  snake.sizeHeight = 20;
-  snake.sizeWidth = 20;
-  cola.PositionX == snake.PositionX
-    ? (cola.PositionX = snake.PositionX)
-    : false;
-  cola.PositionX == snake.PositionX
-    ? (cola.PositionY = snake.PositionY)
-    : false;
+  
+ 
 }
 function DownMov() {
   snake.movLeft = false;
   snake.movRight = false;
   snake.movUp = false;
   snake.movDown = true;
-  snake.sizeHeight = 20;
-  snake.sizeWidth = 20;
-  cola.PositionX == snake.PositionX
-    ? (cola.PositionX = snake.PositionX)
-    : false;
-  cola.PositionX == snake.PositionX
-    ? (cola.PositionY = snake.PositionY)
-    : false;
+  
+  
 }
 
 function directionMov() {
@@ -126,7 +102,7 @@ function directionMov() {
   snake.movUp ? (snake.PositionY -= espaciosAvanzados) : false;
   snake.movDown ? (snake.PositionY += espaciosAvanzados) : false;
 
-  snake.movRight
+ snake.movRight
     ? setTimeout(() => {
         cola.PositionX += espaciosAvanzados;
       }, retraso)
